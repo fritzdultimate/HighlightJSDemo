@@ -5,7 +5,7 @@ Script to hight HTML, CSS and JAVASCRIPT code snippet.
 ```Javascript
 let highlight = new Highlight(element, lang, style?);
 //element can be an element id == '#id' or class == '.class'
-//type is the language to highlight ('html' || 'css' || 'js');
+//lang is the language to highlight ('html' || 'css' || 'js');
 //style is an optional object with style rules;
 highlight.mark();
 ```
