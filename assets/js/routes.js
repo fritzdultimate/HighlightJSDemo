@@ -15,7 +15,7 @@ let routes = {
         
         mounted() {
             let highlight = new Highlight();
-            highlight.match();
+            highlight.style();
         },
         exist(){
             // history.go(0)
@@ -53,18 +53,8 @@ let routes = {
         },
         mounted(){console.log(7)
             let highlight = new Highlight(true, {});
-            highlight.match();
-            f = (() => {
-                let e = false;
-                return function() {
-                    if(!e) {
-                        e = true;
-                        history.go(0)
-                    }
-                }
-            })
-
-            f();
+            highlight.style();
+            
         },
         exist(){
             showLoader();
