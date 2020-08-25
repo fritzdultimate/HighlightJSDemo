@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#9c27b0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/highlight.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="assets/js/fn.js"></script>
+    <script defer src="assets/js/libs/walkify.js"></script>
+    <script defer src="assets/js/libs/highlight.js"></script>
+    <script defer src="assets/js/routes.js"></script>
+    <!-- <title>walkify.js - demo</title> -->
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="brand">
+               Highligh.js
+            </div>
+            <div class="nav-item" align="right">
+                <a href="#/"> index </a>
+                <a href="#/about"> about </a>
+
+                <a href="#/docs"> docs </a>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <template for="index">
+           <center class="matched">Demos</center><br>
+           <div class="matched" ><strong>Note:</strong> this is running on walkify.Js library, by Noble Desmarts</div>
+```HTML <!-- HTML -->
+&lt;!DOCTYPE html&gt;
+<div class="container">
+    <div class="col-4">
+        <p>
+            Some contents here
+        </p>
+    </div>
+    <div class="col-8" id="foo" data-id="26">
+        Foo
+    </div>
+    <!-- End -->
+</div>
+```
+
+```CSS /* CSS */
+.container {
+    display : flex;
+    width:100%;
+    padding:none;
+    margin:0 2px;
+}
+
+.col-4, .col-8 {
+    justify-content: column;
+    display:block;
+    font-size:20px;
+    font-weight:bold;
+    /* outline: none; */
+}
+```
+```CSS /* CSS */
+#foo {
+    /* hide this content */
+    display:none;
+}
+```
+
+```JAVASCRIPT //Js
+let container = document.getElementsByClassName('container');
+Array.from(container).forEach(el => {
+    console.log(el)
+});
+```
+
+```Javascript // JS
+let bool = true;
+let str = "string";
+let num = 1999;
+let obj = {};
+const BALL = PI * 360 - 85;
+```
+        </template>
+
+        <template for="about">
+            -ABOUT-
+            <br>
+            <div align="center" class="content-container">
+                    <br>
+                    <h3> -ABOUT PAGE- </h3>
+                    <img src="assets/img/fritz.jpg" class="user-image">
+                    <br><br>
+                    Hello my name is <b id="testing" class="matched"> Nwosu Darlington </b> <br><br>
+                    This is not my portfolio but you can connect with me on:
+                    <br><br>
+                    Facebook - <a href="http://facebook.com/fritz.darlington">Fritz Darl</a>
+                    <br>
+                    Twitter - <a href="http://twitter.com/fritzdultimate">fritzdultimate</a>
+                    <hr>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien. Nam eu neque vulputate diam rhoncus faucibus. Curabitur quis varius libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat sem at mauris suscipit porta. Cras metus velit, elementum sed pellentesque a, pharetra eu eros. Etiam facilisis placerat euismod. Nam faucibus neque arcu, quis accumsan leo tincidunt varius. In vel diam enim. Sed id ultrices ligula. Maecenas at urna arcu. Sed quis nulla sapien. Nam felis mauris, tincidunt at convallis id, tempor molestie libero. Quisque viverra sollicitudin nisl sit amet hendrerit. Etiam sit amet arcu sem. Morbi eu nibh condimentum, interdum est quis, tempor nisi. Vivamus convallis erat in pharetra elementum. Phasellus metus neque, commodo vitae venenatis sed, pellentesque non purus. Pellentesque egestas convallis suscipit. Ut luctus, leo quis porta vulputate, purus purus pellentesque ex, id consequat mi nisl quis eros. Integer ornare libero quis risus fermentum consequat. Mauris pharetra odio sagittis, vulputate magna at, lobortis nulla. Proin efficitur, nisi vel finibus elementum, orci sem volutpat eros, eget ultrices velit mi sagittis massa. Vestibulum sagittis ullamcorper cursus. Ut turpis dolor, tempor ut tellus et, sodales ultricies elit. Ut pharetra tristique est ac dictum. Integer ac consectetur purus, vehicula efficitur urna. Donec ultrices accumsan ipsum vitae faucibus. Quisque malesuada ex nisi, a bibendum erat commodo in. Pellentesque suscipit varius gravida. Nam scelerisque est sit amet laoreet pharetra. Vivamus quis ligula sed lacus mattis mollis. Vivamus facilisis orci rutrum nulla porta dignissim. Fusce fermentum id nibh laoreet volutpat. Suspendisse venenatis, risus sed euismod finibus, risus arcu fringilla augue, nec vulputate felis nisl et enim. In ornare, massa a cursus cursus, nisl mi ornare mauris, nec porttitor risus erat ut odio. Integer malesuada hendrerit purus ullamcorper molestie. Fusce imperdiet orci vitae purus suscipit rutrum. Nunc ac metus ac mi commodo sagittis at in leo. Vestibulum est lorem, consequat vel dictum non, imperdiet eu felis. Vivamus molestie sapien id quam rutrum, eget hendrerit eros finibus. Morbi in justo at felis blandit fringilla at faucibus purus. 
+                </div>
+        </template>
+
+        <template for="404">
+            <b>${{message}}</b>
+        </template>
+
+        <template for="docs">
+            <h3> Getting Started </h3>
+            <p>
+                <h5>What is highlightJs</h5>
+                <b>highlightJS</b> is a javascript library to highlight <b>HTML, CSS, and javascript</b> code snippet. It is very easy and simple to use.
+                For Example, the following <b>HTML will be highlighted as below:</b>
+                <div style="white-space: pre-line">
+                    &lt;b id="myDiv" onload="func('text')"&gt;
+                        Some contents...
+                    &lt;b&gt;
+                    &lt;--  comments here --&gt;
+                </div>
+            </p>
+```HTML<b id="myDiv" onload="func('text')">
+    some contents...
+</b>
+<!--  comments here -->
+```
+            <p>
+                Now let's dig deep.
+                Using <b>HighlightJs</b> is straight forward and absolutely simple.
+                <br>
+                First of all you must instatiate the class.
+```Javascript
+let highlight = new Highlight(enable_listing?, stylesObj?);
+highlight.style();
+```
+
+                The above code will instantiate the class with optional two parameters.
+                <ol>
+                    <li>
+                        Enable_listing - &lt;true or false&gt;. If true the markup will number every line number,
+                        otherwise, no numbering.
+                    </li>
+                    <li>
+                        StyleObj - this is where you can optionally customize the styles for your markup.
+                        This is an object that expects maximum of three properties
+                        <ul>
+                            <li>
+                                classNames - this is an object, where its property is the type of snippet you wish to add a different class for. It will override the default one. <br>
+                                it also expects an optioanal property <b>"container"</b>. the property "container" will be an object with two properties (className and override).<br>
+                                className is the container class name, while override is a boolean value (true or false) which will tell <b>HighlightJs</b> to add the class to an existing class, or override it.<br><br>
+                                <b>attributes</b> - this will contain object of each type of snippet you wish to add attrributes:
+```Javascript
+tag: {
+    width:'100px'
+}
+```
+                                <b>styles</b> - this will contain the object of each type of snippet you wish to add inline styles:
+```Javascript
+tag: {
+    'font-weight' : 'bold'
+}
+```
+                                Example below:
+                            </li>
+                        </ul>
+
+                    </li>
+                </ol>
+```Javascript
+let highlight = new Highlight(true, {
+    className: {
+        container: {
+            override: false,
+            className: 'myContainer'
+        },
+        tag: 'html-tag-class',
+        tagName: 'html-tag-name-class'
+    },
+
+    attributes: {
+        tag: {
+            onClick: 'func()',
+            width: '100%'
+        }
+    },
+
+    styles: {
+        tagName: {
+            'font-size':'20px'
+        }
+    }
+})
+```
+            </p>
+
+            <p>
+                As you can see, <b>HighlightJs</b> is very easy to use and also highly customizable.
+                <br>
+                You don't need any container to put you codes, just three backtics(```) and the language (HTML or CSS or JAVASCRIPT); <br><br>
+                E.g<br><br>
+```Javascript
+` ` `Javascript
+// Your codes here
+` ` `
+```
+                Also you must make sure your opening and closing backticks starts at the beginning of the line
+                <br><br><br>
+                One of the importance of the library is the ability to write an Html markup without the fear of the browser parsing it.
+            </p>
+
+            <p>
+                <blockquote>
+                    Last edited by -<author><b>Nwosu Darlington</b></author> <br>
+                    On - <em>Tue, 25 2019</em>
+                </blockquote>
+            </p>
+
+        </template>
+    </section>
+    <section class="main-content">
+        <div class="loader-container">
+            <div class="loader"></div>
+            <h3>Loading...</h3>
+            <noscript>
+               <b class="error">
+                   Sorry :( this page requires javascript
+                </b>
+            </noscript>
+        </div>
+        <div id="app" class="app"></div>
+    </section>
+    <footer class="footer">
+       &copy; Nwosu Darlington 2020
+    </footer>
+</body>
+</html>

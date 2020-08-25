@@ -1,0 +1,111 @@
+body {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+pre.highlight-snippet-container {
+    background: rgba(12, 9, 9, 0.953);
+    position: relative;
+    margin: 1em 0;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow:0px 0px 5px 0px rgba(214, 208, 208, 0.78);
+    color:rgba(255, 255, 255, 0.644);
+}
+
+pre code[class*="highlight-"]{
+    color:none;
+    background:none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break:normal;
+    word-wrap:normal;
+    line-height: 1.5;
+    font-size:14px;
+
+    /* Cross-browser support for tab */
+    -o-tab-size: 4;
+    -moz-tab-size: 4;
+    tab-size: 4;
+
+    /*  */
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+ol.highlight-markup{
+    margin:0;
+    padding:inherit;
+    counter-reset:item;
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+}
+
+ol.highlight-markup li {
+  padding:2px 2px;
+}
+
+ol.highlight-markup li:before {
+  content: counter(item) "  | ";
+  counter-increment: item;
+  margin:0;
+  padding:2px;
+  color:rgba(170, 180, 179, 0.459);
+  font-family: "san-serif, serif";
+}
+div.highlight-markup {
+    padding:inherit;
+}
+
+div.highlight-markup p{
+    padding: 0 5px;
+    margin:5px 10px;
+    border-left:1px solid rgba(170, 180, 179, 0.459);
+}
+
+.highlight-s-dot {
+    color: rgb(77 80 76 / 35%);
+    letter-spacing:2px;
+    padding-right:5px;
+}
+
+.highlight-s-tag, .highlight-s-comments {
+    color:#7D8B99;
+}
+.highlight-s-punctuations, .highlight-s-doctype {
+    color:#5f6364;
+}
+
+.highlight-s-css-property, .highlight-s-js-function-name, .highlight-s-attribute-value, .highlight-s-css-id, .highlight-s-css-selector-value, .highlight-s-js-meth, .highlight-s-operators, .highlight-s-regular-expression {
+    color:#c92c2c;
+}
+
+.highlight-s-tag-name, .highlight-s-js-number, .highlight-s-css-class, .highlight-s-css-mq, .highlight-s-js-property, .highlight-s-arithmethics, .highlight-s-regular-expression-flags, .highlight-s-js-boolean {
+    color:rgb(57, 57, 245);
+}
+
+.highlight-s-attribute, .highlight-s-attribute-value-method, .highlight-s-js-function-call {
+    color:#fce93f;
+}
+
+
+ .highlight-s-css-selector, .highlight-s-attribute, .highlight-s-js-string, .highlight-s-css-property, .highlight-s-regular-expression-special {
+    color: #2f9c0a;
+}
+
+.highlight-s-css-value, .highlight-s-css-selector, .highlight-s-js-special, .highlight-s-regular-expression-slashes {
+    color: rgb(40, 150, 165);
+}
+
+.highlight-s-js-keyword, .highlight-s-css-tag, .highlight-s-js-number {
+    color:rgb(87, 120, 211);
+}
+
+
