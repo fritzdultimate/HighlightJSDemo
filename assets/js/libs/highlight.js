@@ -143,7 +143,6 @@ class Highlight {
                 for(i = startpos + len ; i < end; i++) {
                     rest += content[i];
                 }
-                console.log(rest)
 
                 content = content.substring(0, s + len) + content.substring(end + 3, content.length);
                 content = content.replace(regex, 'HIGHLIGHT_CODE_SNIPPET_CONSTANT');
