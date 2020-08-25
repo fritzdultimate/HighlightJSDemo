@@ -12,23 +12,24 @@ highlight.style();
 #### Example below
 
 ```HTML
-\`\`\`HTML
+```HTML
 <div class="code">
   <div class="mark-up" data-custom="data"> content </div>
 </div>
-\`\`\`
+```
 ```
 
 ```Javascript
-\`\`\`Javascript
-let highlight = new Highlight('.code', 'html', {
-  tag:'red', 
-  tagName: 'green', 
-  attribute: 'orange', 
-  attributeVal: 'red'
+let highlight = new Highlight(true {
+  className : {
+    tag: 'class'
+    }
+  }
+  
+  attributes{//},
+  styles: {//}
 });
-highlight.mark();
-\`\`\`
+highlight.style();
 ```
 
 
