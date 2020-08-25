@@ -51,10 +51,11 @@ let routes = {
             hideLoader();
             // history.go(0)
         },
-        mounted(){console.log(7)
+        mounted(){
             let highlight = new Highlight(true, {});
             highlight.style();
-            
+            let a = document.getElementsByClassName('app')[0];
+            a.innerHTML = a.innerHTML;
         },
         exist(){
             showLoader();
