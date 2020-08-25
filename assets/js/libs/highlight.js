@@ -208,7 +208,7 @@ class Highlight {
             inlineCommentReg = /(?<!\*)\/\/.*/g,
             keyWords = /\b(let|var|new|const|Object|function|class)\b(\s+?)/g,
             multilineCommentReg = /\/\*.+?\s*?\n*?\*\//gs,
-            numReg = /(([-+]?\b\d+\a.?\d*\b)(?=(?:[^"`'\\]*(?:\\.|["`'](?:[^"`'\\]*\\.)*[^"`'\\]*["`']))*[^"`']*$))/g,
+            numReg = /(([-+]?\b\d+\.?\d*\b)(?=(?:[^"`'\\]*(?:\\.|["`'](?:[^"`'\\]*\\.)*[^"`'\\]*["`']))*[^"`']*$))/g,
             boolReg  = /((true|false)(?=(?:[^"`'\\]*(?:\\.|["`'](?:[^"`'\\]*\\.)*[^"`'\\]*["`']))*[^"`']*$))/g,
             jsPropReg = /\b[_$\w]+(\.[_$\w]+)+(\(.*\))?/g,
             classReg = /((?<=\s*(class|function|new|Function)\s+)[$_\w]+)/g,
