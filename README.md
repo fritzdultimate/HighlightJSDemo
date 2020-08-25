@@ -3,23 +3,24 @@ Script to hight HTML, CSS and JAVASCRIPT code snippet.
 
 ### For HighlightJS initialiation
 ```Javascript
-let highlight = new Highlight(element, lang, style?);
-//element can be an element id == '#id' or class == '.class'
-//lang is the language to highlight ('html' || 'css' || 'js');
+let highlight = new Highlight(enable_list?, style?);
 //style is an optional object with style rules;
-highlight.mark();
+//enable_list is a boolean: True to enable listing, false to disable. enabled by default.
+highlight.style();
 ```
 
 #### Example below
 
 ```HTML
+\`\`\`HTML
 <div class="code">
-  &lt;div class="mark-up" data-custom="data"&gt; content &lt;/div&gt;
+  <div class="mark-up" data-custom="data"> content </div>
 </div>
+\`\`\`
 ```
 
 ```Javascript
-
+\`\`\`Javascript
 let highlight = new Highlight('.code', 'html', {
   tag:'red', 
   tagName: 'green', 
@@ -27,6 +28,7 @@ let highlight = new Highlight('.code', 'html', {
   attributeVal: 'red'
 });
 highlight.mark();
+\`\`\`
 ```
 
 
