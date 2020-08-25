@@ -36,6 +36,8 @@ let routes = {
         },
         //calls this method when the view is mounted
         mounted(){
+            let a = document.getElementsByClassName('app')[0];
+            document.getElementsByClassName('app')[0].innerHTML = a.innerHTML;
         },
         exist(){
             showLoader();
