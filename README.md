@@ -16,7 +16,7 @@ highlight.style();
 <div class="code">
   <div class="mark-up" data-custom="data"> content </div>
 </div>
-```
+\```
 ```
 
 ```Javascript
