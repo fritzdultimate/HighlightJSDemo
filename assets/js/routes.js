@@ -16,6 +16,8 @@ let routes = {
         mounted() {
             let highlight = new Highlight();
             highlight.style();
+            let a = document.getElementsByClassName('app')[0];
+            document.getElementsByClassName('app')[0].innerHTML = a.innerHTML;
         },
         exist(){
             // history.go(0)
@@ -55,7 +57,7 @@ let routes = {
             let highlight = new Highlight(true, {});
             highlight.style();
             let a = document.getElementsByClassName('app')[0];
-            document.getElementsByClassName('app')[0].innerHTML = 'a.innerHTML';
+            document.getElementsByClassName('app')[0].innerHTML = a.innerHTML;
         },
         exist(){
             showLoader();
