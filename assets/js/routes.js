@@ -50,7 +50,7 @@ let routes = {
         name : 'docs',
         matched(){
             hideLoader();
-            document.title = "walkifyjs - documentation";
+            document.title = "HighlightJs - documentation";
             this.view();
             hideLoader();
             // history.go(0)
