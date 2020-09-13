@@ -1,5 +1,5 @@
 # HighlightJS
-Script to hight HTML, CSS and JAVASCRIPT code snippet.
+Script to highlight HTML, CSS and JAVASCRIPT code snippet.
 
 ### For HighlightJS initialiation
 ```Javascript
